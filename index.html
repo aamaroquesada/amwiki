@@ -1,0 +1,2677 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" type="image/png" href="static/img/Adjust_Favicon.ico">
+
+  <title>AM Dash - Account info</title>
+
+  <!-- Custom fonts for this template-->
+  <link rel="stylesheet" href="/css/font-awesome.min.css">
+
+  <link
+    href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+    rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link rel="stylesheet" href="/css/sb-admin-2.min.css">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+      <!-- Sidebar - Brand -->
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/overview">
+        <div class="sidebar-brand-icon rotate-n-15">
+        </div>
+        <div class="sidebar-brand-text mx-3">AM Dash</div>
+      </a>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider my-0">
+
+      <!-- Nav Item - Dashboard -->
+      <li class="nav-item">
+        <a class="nav-link">
+          Welcome, <strong>Alessandro</strong>
+        </a>
+        <a class="nav-link collapsed" href="/password" style="padding-top:0px">
+          <span>Change password</span>
+        </a>
+        <a class="nav-link collapsed" href="/logout" style="padding-top:0px">
+          <span>Logout</span>
+        </a>
+      </li>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider">
+
+      <!-- Heading -->
+      <div class="sidebar-heading">
+        Interface
+      </div>
+
+      <!-- Nav Item - Overview -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="/overview">
+          <i class="fa fa-dashboard"></i>
+          <span>Overview</span>
+        </a>
+      </li>
+
+      <!-- Nav Item - Account info -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="/data">
+          <i class="fa fa-user-o"></i>
+          <span>Account info</span>
+        </a>
+      </li>
+
+      <!-- Nav Item - Query -->
+      <li class="nav-item">
+        <a class="nav-link" href="/query">
+          <i class="fa fa-search"></i>
+          <span>Query tool</span></a>
+      </li>
+      <!-- Nav Item - Query -->
+      <li class="nav-item">
+        <a class="nav-link" href="/salesforce">
+          <i class="fa fa-address-card"></i>
+          <span>Cases</span></a>
+      </li>
+      <!-- Divider -->
+      <hr class="sidebar-divider d-none d-md-block">
+
+      <!-- Nav Item - Jira ticket -->
+      <li class="nav-item">
+        <a class="nav-link" href="/qbr">
+          <i class="fa fa-address-card"></i>
+          <span>QBR</span></a>
+      </li>
+      <!-- Nav Item - Jira ticket -->
+      <li class="nav-item">
+        <a class="nav-link" href="/competitorsdks">
+          <i class="fa fa-address-card"></i>
+          <span>Competitor SDK installs</span></a>
+      </li>
+      <!-- Nav Item - Jira ticket -->
+      <li class="nav-item">
+        <a class="nav-link" href="#" id="feedback-button">
+          <i class="fa fa-bug"></i>
+          <span>Jira Issue Creator</span></a>
+      </li>
+    </ul>
+    <!-- End of Sidebar -->
+
+    <!-- !PAGE CONTENT! -->
+    <div class="container-fluid" style="padding-top:22px">
+      <!-- Page Heading -->
+      <h3><b><i class="fa fa-user-o"></i> Account info</b></h3>
+      <br>
+      <div class="card shadow mb-4">
+        <div class="card-header py-3">
+          <h6 class="m-0 font-weight-bold text-primary">Account list</h6>
+        </div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+              <thead>
+                <tr>
+                  <th>Account status</th>
+                  <th>Account name</th>
+                  <th>Account ID</th>
+                  <th>Package</th>
+                  <th>QBR(Most recent)</th>
+                  <th>Show all apps</th>
+                  <th>Go to details</th>
+                  <th>Account health</th>
+                  <th>Health Score</th>
+                </tr>
+              </thead>
+              <tfoot>
+                <tr>
+                  <th>Account status</th>
+                  <th>Account name</th>
+                  <th>Account ID</th>
+                  <th>Package</th>
+                  <th>QBR(Most recent)</th>
+                  <th>Show all apps</th>
+                  <th>Go to details</th>
+                  <th>Account health</th>
+                  <th>Health Score</th>
+                </tr>
+              </tfoot>
+              <tbody>
+
+                <tr>
+                  <td>
+
+                    Active
+
+                  </td>
+                  <td>12 MIN SERVICOS DIGITAIS E NEGOCIOS LTDA.</td>
+                  <td>15400</td>
+                  <td>
+                    Business Pro
+                    <br>
+
+                    4 Support
+
+                  </td>
+
+                  <td>No QBR Needed
+                    <br>
+                    None
+                  </td>
+                  <td>
+                    <form action='/allapps/15400'>
+                      <input class="btn btn-primary btn-secondary text-gray-100" type="submit" value="All apps">
+                    </form>
+                  </td>
+                  <td>
+                    <form action='account_details.html'>
+                      <input class="btn btn-primary btn-secondary text-gray-100" type="submit" value="Details">
+                    </form>
+                  </td>
+                  <td>
+                    <form action='/accounthealth/15400'>
+                      <input class="btn btn-primary btn-secondary text-gray-100" type="submit" value="Health">
+                    </form>
+                  </td>
+
+
+
+                  <td class="bg-gradient-warning text-warning">
+                    <button href="#" data-toggle="modal" data-target="#accountModal15400"
+                      class="btn btn-primary btn-secondary text-gray-100">Show scores</button>
+                  </td>
+
+
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal" id="accountModal15400" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" style="max-width: 80%;">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="exampleModalLabel">12 MIN SERVICOS DIGITAIS E NEGOCIOS LTDA.</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="card shadow mb-4">
+            <div class="card-body">
+              <h3>General scores:</h3>
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>Attributions L30</th>
+                      <th>Emergency score</th>
+                      <th>Integration depth score</th>
+
+
+                      <th>Feature score</th>
+
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>109,241</td>
+
+                      <td class="bg-gradient-success text-success"></td>
+
+
+
+
+                      <td class="bg-gradient-warning text-warning"></td>
+
+
+
+
+
+
+                      <td class="bg-gradient-success"></td>
+
+
+
+                    </tr>
+                </table>
+              </div>
+
+              <h3>Integration depth score:</h3>
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>SDK version</th>
+                      <th>Partner Integration</th>
+                      <th>Partner Ad Accounts</th>
+                      <th>Deep Linking Integration</th>
+                      <th>SDK Signature integration</th>
+                      <th>Data import</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+                      <td class="bg-gradient-warning text-warning"></td>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+                      <td class="bg-gradient-warning text-warning"></td>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+                      <td class="bg-gradient-success text-success"></td>
+
+
+                    </tr>
+                </table>
+              </div>
+
+
+
+              <h3>Feature score:</h3>
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+
+
+
+                      <th>Audience Builder score</th>
+
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+
+
+
+
+
+
+
+                      <td class="bg-gradient-success text-success"></td>
+
+
+
+
+
+
+                    </tr>
+                </table>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="accountModal1702" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" style="max-width: 80%;">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="exampleModalLabel">Bus Serviços De Agendamento S.A. (ClickBus)</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="card shadow mb-4">
+            <div class="card-body">
+              <h3>General scores:</h3>
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>Attributions L30</th>
+                      <th>Emergency score</th>
+                      <th>Integration depth score</th>
+
+
+                      <th>Feature score</th>
+
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1,483</td>
+
+                      <td class="bg-gradient-success text-success"></td>
+
+
+
+
+                      <td class="bg-gradient-warning text-warning"></td>
+
+
+
+
+
+
+                      <td class="bg-gradient-danger"></td>
+
+
+
+                    </tr>
+                </table>
+              </div>
+
+              <h3>Integration depth score:</h3>
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>SDK version</th>
+                      <th>Partner Integration</th>
+                      <th>Partner Ad Accounts</th>
+                      <th>Deep Linking Integration</th>
+                      <th>SDK Signature integration</th>
+                      <th>Data import</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+                      <td class="bg-gradient-success text-success"></td>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+                      <td class="bg-gradient-success text-success"></td>
+
+
+                    </tr>
+                </table>
+              </div>
+
+
+
+              <h3>Feature score:</h3>
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+
+                      <th>Fraud prevention score</th>
+
+
+
+                      <th>Audience Builder score</th>
+
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+
+
+
+
+                      <td class="bg-gradient-success text-success"></td>
+
+
+
+
+
+
+                    </tr>
+                </table>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="accountModal21823" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" style="max-width: 80%;">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="exampleModalLabel">Cava</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="card shadow mb-4">
+            <div class="card-body">
+              <h3>General scores:</h3>
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>Attributions L30</th>
+                      <th>Emergency score</th>
+                      <th>Integration depth score</th>
+
+
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>0</td>
+
+                      <td class="bg-gradient-success text-success"></td>
+
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+
+
+
+                    </tr>
+                </table>
+              </div>
+
+              <h3>Integration depth score:</h3>
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>SDK version</th>
+                      <th>Partner Integration</th>
+                      <th>Partner Ad Accounts</th>
+                      <th>Deep Linking Integration</th>
+                      <th>SDK Signature integration</th>
+                      <th>Data import</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+                    </tr>
+                </table>
+              </div>
+
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="accountModal9696" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" style="max-width: 80%;">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="exampleModalLabel">Dashlane, Inc.</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="card shadow mb-4">
+            <div class="card-body">
+              <h3>General scores:</h3>
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>Attributions L30</th>
+                      <th>Emergency score</th>
+                      <th>Integration depth score</th>
+
+
+                      <th>Feature score</th>
+
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>179,183</td>
+
+                      <td class="bg-gradient-success text-success"></td>
+
+
+
+
+                      <td class="bg-gradient-warning text-warning"></td>
+
+
+
+
+
+
+                      <td class="bg-gradient-success"></td>
+
+
+
+                    </tr>
+                </table>
+              </div>
+
+              <h3>Integration depth score:</h3>
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>SDK version</th>
+                      <th>Partner Integration</th>
+                      <th>Partner Ad Accounts</th>
+                      <th>Deep Linking Integration</th>
+                      <th>SDK Signature integration</th>
+                      <th>Data import</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+
+
+                      <td class="bg-gradient-warning text-warning"></td>
+
+
+
+                      <td class="bg-gradient-warning text-warning"></td>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+                      <td class="bg-gradient-success text-success"></td>
+
+
+                    </tr>
+                </table>
+              </div>
+
+
+
+              <h3>Feature score:</h3>
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+
+                      <th>Fraud prevention score</th>
+
+
+
+                      <th>Audience Builder score</th>
+
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+
+
+
+
+                      <td class="bg-gradient-success text-success"></td>
+
+
+
+
+
+
+                    </tr>
+                </table>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="accountModal6723" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" style="max-width: 80%;">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="exampleModalLabel">Despegar.com</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="card shadow mb-4">
+            <div class="card-body">
+              <h3>General scores:</h3>
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>Attributions L30</th>
+                      <th>Emergency score</th>
+                      <th>Integration depth score</th>
+
+
+                      <th>Feature score</th>
+
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>399,300</td>
+
+                      <td class="bg-gradient-success text-success"></td>
+
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+
+
+
+                      <td class="bg-gradient-danger"></td>
+
+
+
+                    </tr>
+                </table>
+              </div>
+
+              <h3>Integration depth score:</h3>
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>SDK version</th>
+                      <th>Partner Integration</th>
+                      <th>Partner Ad Accounts</th>
+                      <th>Deep Linking Integration</th>
+                      <th>SDK Signature integration</th>
+                      <th>Data import</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+                      <td class="bg-gradient-warning text-warning"></td>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+                      <td class="bg-gradient-success text-success"></td>
+
+
+                    </tr>
+                </table>
+              </div>
+
+
+
+              <h3>Feature score:</h3>
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+
+                      <th>Fraud prevention score</th>
+
+
+                      <th>Uninstall reinstall score</th>
+
+
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+
+
+
+                      <td class="bg-gradient-warning text-warning"></td>
+
+
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+
+
+
+
+
+                    </tr>
+                </table>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="accountModal18565" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" style="max-width: 80%;">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="exampleModalLabel">Empiricus</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="card shadow mb-4">
+            <div class="card-body">
+              <h3>General scores:</h3>
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>Attributions L30</th>
+                      <th>Emergency score</th>
+                      <th>Integration depth score</th>
+
+
+                      <th>Feature score</th>
+
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>60,044</td>
+
+                      <td class="bg-gradient-success text-success"></td>
+
+
+
+
+                      <td class="bg-gradient-warning text-warning"></td>
+
+
+
+
+
+
+                      <td class="bg-gradient-success"></td>
+
+
+
+                    </tr>
+                </table>
+              </div>
+
+              <h3>Integration depth score:</h3>
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>SDK version</th>
+                      <th>Partner Integration</th>
+                      <th>Partner Ad Accounts</th>
+                      <th>Deep Linking Integration</th>
+                      <th>SDK Signature integration</th>
+                      <th>Data import</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+
+
+                      <td class="bg-gradient-warning text-warning"></td>
+
+
+
+                      <td class="bg-gradient-success text-success"></td>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+                      <td class="bg-gradient-warning text-warning"></td>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+                      <td class="bg-gradient-success text-success"></td>
+
+
+                    </tr>
+                </table>
+              </div>
+
+
+
+              <h3>Feature score:</h3>
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+
+                      <th>Fraud prevention score</th>
+
+
+
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+
+
+
+                      <td class="bg-gradient-success text-success"></td>
+
+
+
+
+
+
+
+
+
+
+                    </tr>
+                </table>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="accountModal19278" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" style="max-width: 80%;">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="exampleModalLabel">enjoei</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="card shadow mb-4">
+            <div class="card-body">
+              <h3>General scores:</h3>
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>Attributions L30</th>
+                      <th>Emergency score</th>
+                      <th>Integration depth score</th>
+
+
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>0</td>
+
+                      <td class="bg-gradient-success text-success"></td>
+
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+
+
+
+                    </tr>
+                </table>
+              </div>
+
+              <h3>Integration depth score:</h3>
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>SDK version</th>
+                      <th>Partner Integration</th>
+                      <th>Partner Ad Accounts</th>
+                      <th>Deep Linking Integration</th>
+                      <th>SDK Signature integration</th>
+                      <th>Data import</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+
+
+                      <td class="bg-gradient-warning text-warning"></td>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+                    </tr>
+                </table>
+              </div>
+
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="accountModal8802" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" style="max-width: 80%;">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="exampleModalLabel">Gazeus Fun Mobile Games for Free Inc</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="card shadow mb-4">
+            <div class="card-body">
+              <h3>General scores:</h3>
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>Attributions L30</th>
+                      <th>Emergency score</th>
+                      <th>Integration depth score</th>
+
+
+                      <th>Feature score</th>
+
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>939,439</td>
+
+                      <td class="bg-gradient-success text-success"></td>
+
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+
+
+
+                      <td class="bg-gradient-danger"></td>
+
+
+
+                    </tr>
+                </table>
+              </div>
+
+              <h3>Integration depth score:</h3>
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>SDK version</th>
+                      <th>Partner Integration</th>
+                      <th>Partner Ad Accounts</th>
+                      <th>Deep Linking Integration</th>
+                      <th>SDK Signature integration</th>
+                      <th>Data import</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+                      <td class="bg-gradient-warning text-warning"></td>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+                      <td class="bg-gradient-success text-success"></td>
+
+
+                    </tr>
+                </table>
+              </div>
+
+
+
+              <h3>Feature score:</h3>
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+
+                      <th>Fraud prevention score</th>
+
+
+
+                      <th>Audience Builder score</th>
+
+
+                      <th>Subscription score</th>
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+
+                    </tr>
+                </table>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="accountModal2316" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" style="max-width: 80%;">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="exampleModalLabel">GFG Comercio Varejista Ltd. (Dafiti)</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="card shadow mb-4">
+            <div class="card-body">
+              <h3>General scores:</h3>
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>Attributions L30</th>
+                      <th>Emergency score</th>
+                      <th>Integration depth score</th>
+
+
+                      <th>Feature score</th>
+
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>7,304,298</td>
+
+                      <td class="bg-gradient-success text-success"></td>
+
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+
+
+
+                      <td class="bg-gradient-success"></td>
+
+
+
+                    </tr>
+                </table>
+              </div>
+
+              <h3>Integration depth score:</h3>
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>SDK version</th>
+                      <th>Partner Integration</th>
+                      <th>Partner Ad Accounts</th>
+                      <th>Deep Linking Integration</th>
+                      <th>SDK Signature integration</th>
+                      <th>Data import</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+                      <td class="bg-gradient-success text-success"></td>
+
+
+                    </tr>
+                </table>
+              </div>
+
+
+
+              <h3>Feature score:</h3>
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+
+                      <th>Fraud prevention score</th>
+
+
+
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+
+
+
+                      <td class="bg-gradient-success text-success"></td>
+
+
+
+
+
+
+
+
+
+
+                    </tr>
+                </table>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="accountModal21090" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" style="max-width: 80%;">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="exampleModalLabel">Grupo Recovery</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="card shadow mb-4">
+            <div class="card-body">
+              <h3>General scores:</h3>
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>Attributions L30</th>
+                      <th>Emergency score</th>
+                      <th>Integration depth score</th>
+
+
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>0</td>
+
+                      <td class="bg-gradient-success text-success"></td>
+
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+
+
+
+                    </tr>
+                </table>
+              </div>
+
+              <h3>Integration depth score:</h3>
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>SDK version</th>
+                      <th>Partner Integration</th>
+                      <th>Partner Ad Accounts</th>
+                      <th>Deep Linking Integration</th>
+                      <th>SDK Signature integration</th>
+                      <th>Data import</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+
+
+                      <td class="bg-gradient-success text-success"></td>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+                    </tr>
+                </table>
+              </div>
+
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="accountModal20956" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" style="max-width: 80%;">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="exampleModalLabel">Kyte Tecnologia de Software Ltda</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="card shadow mb-4">
+            <div class="card-body">
+              <h3>General scores:</h3>
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>Attributions L30</th>
+                      <th>Emergency score</th>
+                      <th>Integration depth score</th>
+
+
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>0</td>
+
+                      <td class="bg-gradient-success text-success"></td>
+
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+
+
+
+                    </tr>
+                </table>
+              </div>
+
+              <h3>Integration depth score:</h3>
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>SDK version</th>
+                      <th>Partner Integration</th>
+                      <th>Partner Ad Accounts</th>
+                      <th>Deep Linking Integration</th>
+                      <th>SDK Signature integration</th>
+                      <th>Data import</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+                      <td class="bg-gradient-warning text-warning"></td>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+                    </tr>
+                </table>
+              </div>
+
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="accountModal7480" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" style="max-width: 80%;">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="exampleModalLabel">Privalia Venta Directa, S.A.</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="card shadow mb-4">
+            <div class="card-body">
+              <h3>General scores:</h3>
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>Attributions L30</th>
+                      <th>Emergency score</th>
+                      <th>Integration depth score</th>
+
+
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>2,833</td>
+
+                      <td class="bg-gradient-success text-success"></td>
+
+
+
+
+                      <td class="bg-gradient-warning text-warning"></td>
+
+
+
+
+
+
+                    </tr>
+                </table>
+              </div>
+
+              <h3>Integration depth score:</h3>
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>SDK version</th>
+                      <th>Partner Integration</th>
+                      <th>Partner Ad Accounts</th>
+                      <th>Deep Linking Integration</th>
+                      <th>SDK Signature integration</th>
+                      <th>Data import</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+                      <td class="bg-gradient-warning text-warning"></td>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+                      <td class="bg-gradient-warning text-warning"></td>
+
+
+
+                      <td class="bg-gradient-warning text-warning"></td>
+
+
+
+                      <td class="bg-gradient-success text-success"></td>
+
+
+                    </tr>
+                </table>
+              </div>
+
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="accountModal19717" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" style="max-width: 80%;">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="exampleModalLabel">Rebanking</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="card shadow mb-4">
+            <div class="card-body">
+              <h3>General scores:</h3>
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>Attributions L30</th>
+                      <th>Emergency score</th>
+                      <th>Integration depth score</th>
+
+
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>0</td>
+
+                      <td class="bg-gradient-success text-success"></td>
+
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+
+
+
+                    </tr>
+                </table>
+              </div>
+
+              <h3>Integration depth score:</h3>
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>SDK version</th>
+                      <th>Partner Integration</th>
+                      <th>Partner Ad Accounts</th>
+                      <th>Deep Linking Integration</th>
+                      <th>SDK Signature integration</th>
+                      <th>Data import</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+                    </tr>
+                </table>
+              </div>
+
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="accountModal14997" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" style="max-width: 80%;">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="exampleModalLabel">Santander</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="card shadow mb-4">
+            <div class="card-body">
+              <h3>General scores:</h3>
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>Attributions L30</th>
+                      <th>Emergency score</th>
+                      <th>Integration depth score</th>
+
+
+                      <th>Feature score</th>
+
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>3,837,016</td>
+
+                      <td class="bg-gradient-success text-success"></td>
+
+
+
+
+                      <td class="bg-gradient-warning text-warning"></td>
+
+
+
+
+
+
+                      <td class="bg-gradient-danger"></td>
+
+
+
+                    </tr>
+                </table>
+              </div>
+
+              <h3>Integration depth score:</h3>
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>SDK version</th>
+                      <th>Partner Integration</th>
+                      <th>Partner Ad Accounts</th>
+                      <th>Deep Linking Integration</th>
+                      <th>SDK Signature integration</th>
+                      <th>Data import</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+                      <td class="bg-gradient-warning text-warning"></td>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+                      <td class="bg-gradient-warning text-warning"></td>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+                      <td class="bg-gradient-success text-success"></td>
+
+
+                    </tr>
+                </table>
+              </div>
+
+
+
+              <h3>Feature score:</h3>
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+
+                      <th>Fraud prevention score</th>
+
+
+                      <th>Uninstall reinstall score</th>
+
+
+                      <th>Audience Builder score</th>
+
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+
+
+
+                      <td class="bg-gradient-success text-success"></td>
+
+
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+
+
+                      <td class="bg-gradient-success text-success"></td>
+
+
+
+
+
+
+                    </tr>
+                </table>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="accountModal14945" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" style="max-width: 80%;">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="exampleModalLabel">Telefônica</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="card shadow mb-4">
+            <div class="card-body">
+              <h3>General scores:</h3>
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>Attributions L30</th>
+                      <th>Emergency score</th>
+                      <th>Integration depth score</th>
+
+
+                      <th>Feature score</th>
+
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>779,958</td>
+
+                      <td class="bg-gradient-success text-success"></td>
+
+
+
+
+                      <td class="bg-gradient-warning text-warning"></td>
+
+
+
+
+
+
+                      <td class="bg-gradient-danger"></td>
+
+
+
+                    </tr>
+                </table>
+              </div>
+
+              <h3>Integration depth score:</h3>
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>SDK version</th>
+                      <th>Partner Integration</th>
+                      <th>Partner Ad Accounts</th>
+                      <th>Deep Linking Integration</th>
+                      <th>SDK Signature integration</th>
+                      <th>Data import</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+
+
+                      <td class="bg-gradient-success text-success"></td>
+
+
+
+                      <td class="bg-gradient-warning text-warning"></td>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+                    </tr>
+                </table>
+              </div>
+
+
+
+              <h3>Feature score:</h3>
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+
+
+
+                      <th>Audience Builder score</th>
+
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+
+
+
+
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+
+
+
+                    </tr>
+                </table>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="accountModal13306" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" style="max-width: 80%;">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="exampleModalLabel">Tilting Point Media LLC</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="card shadow mb-4">
+            <div class="card-body">
+              <h3>General scores:</h3>
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>Attributions L30</th>
+                      <th>Emergency score</th>
+                      <th>Integration depth score</th>
+
+
+                      <th>Feature score</th>
+
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>3,376,167</td>
+
+                      <td class="bg-gradient-success text-success"></td>
+
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+
+
+
+                      <td class="bg-gradient-danger"></td>
+
+
+
+                    </tr>
+                </table>
+              </div>
+
+              <h3>Integration depth score:</h3>
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>SDK version</th>
+                      <th>Partner Integration</th>
+                      <th>Partner Ad Accounts</th>
+                      <th>Deep Linking Integration</th>
+                      <th>SDK Signature integration</th>
+                      <th>Data import</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+                      <td class="bg-gradient-warning text-warning"></td>
+
+
+
+                      <td class="bg-gradient-success text-success"></td>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+                    </tr>
+                </table>
+              </div>
+
+
+
+              <h3>Feature score:</h3>
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+
+                      <th>Fraud prevention score</th>
+
+
+                      <th>Uninstall reinstall score</th>
+
+
+                      <th>Audience Builder score</th>
+
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+
+
+
+                    </tr>
+                </table>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="accountModal20842" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" style="max-width: 80%;">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="exampleModalLabel">Unidas</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="card shadow mb-4">
+            <div class="card-body">
+              <h3>General scores:</h3>
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>Attributions L30</th>
+                      <th>Emergency score</th>
+                      <th>Integration depth score</th>
+
+
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>0</td>
+
+                      <td class="bg-gradient-success text-success"></td>
+
+
+
+
+                      <td class="bg-gradient-warning text-warning"></td>
+
+
+
+
+
+
+                    </tr>
+                </table>
+              </div>
+
+              <h3>Integration depth score:</h3>
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>SDK version</th>
+                      <th>Partner Integration</th>
+                      <th>Partner Ad Accounts</th>
+                      <th>Deep Linking Integration</th>
+                      <th>SDK Signature integration</th>
+                      <th>Data import</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+
+
+                      <td class="bg-gradient-success text-success"></td>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+                      <td class="bg-gradient-warning text-warning"></td>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+                    </tr>
+                </table>
+              </div>
+
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="accountModal7058" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" style="max-width: 80%;">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="exampleModalLabel">VivaReal</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="card shadow mb-4">
+            <div class="card-body">
+              <h3>General scores:</h3>
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>Attributions L30</th>
+                      <th>Emergency score</th>
+                      <th>Integration depth score</th>
+
+
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>262,082</td>
+
+                      <td class="bg-gradient-success text-success"></td>
+
+
+
+
+                      <td class="bg-gradient-warning text-warning"></td>
+
+
+
+
+
+
+                    </tr>
+                </table>
+              </div>
+
+              <h3>Integration depth score:</h3>
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>SDK version</th>
+                      <th>Partner Integration</th>
+                      <th>Partner Ad Accounts</th>
+                      <th>Deep Linking Integration</th>
+                      <th>SDK Signature integration</th>
+                      <th>Data import</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+
+
+                      <td class="bg-gradient-warning text-warning"></td>
+
+
+
+                      <td class="bg-gradient-warning text-warning"></td>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+                      <td class="bg-gradient-warning text-warning"></td>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+                      <td class="bg-gradient-success text-success"></td>
+
+
+                    </tr>
+                </table>
+              </div>
+
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="accountModal17062" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" style="max-width: 80%;">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="exampleModalLabel">Westwing</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="card shadow mb-4">
+            <div class="card-body">
+              <h3>General scores:</h3>
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>Attributions L30</th>
+                      <th>Emergency score</th>
+                      <th>Integration depth score</th>
+
+
+                      <th>Feature score</th>
+
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>53,787</td>
+
+                      <td class="bg-gradient-success text-success"></td>
+
+
+
+
+                      <td class="bg-gradient-warning text-warning"></td>
+
+
+
+
+
+
+                      <td class="bg-gradient-success"></td>
+
+
+
+                    </tr>
+                </table>
+              </div>
+
+              <h3>Integration depth score:</h3>
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>SDK version</th>
+                      <th>Partner Integration</th>
+                      <th>Partner Ad Accounts</th>
+                      <th>Deep Linking Integration</th>
+                      <th>SDK Signature integration</th>
+                      <th>Data import</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+
+
+                      <td class="bg-gradient-warning text-warning"></td>
+
+
+
+                      <td class="bg-gradient-warning text-warning"></td>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+                      <td class="bg-gradient-success text-success"></td>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+                      <td class="bg-gradient-success text-success"></td>
+
+
+                    </tr>
+                </table>
+              </div>
+
+
+
+              <h3>Feature score:</h3>
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+
+
+                      <th>Uninstall reinstall score</th>
+
+
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+
+
+
+
+
+                      <td class="bg-gradient-success text-success"></td>
+
+
+
+
+
+
+
+
+                    </tr>
+                </table>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="accountModal19122" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" style="max-width: 80%;">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="exampleModalLabel">Wmccann / Banco do Brasil</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="card shadow mb-4">
+            <div class="card-body">
+              <h3>General scores:</h3>
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>Attributions L30</th>
+                      <th>Emergency score</th>
+                      <th>Integration depth score</th>
+
+
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>0</td>
+
+                      <td class="bg-gradient-success text-success"></td>
+
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+
+
+
+                    </tr>
+                </table>
+              </div>
+
+              <h3>Integration depth score:</h3>
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>SDK version</th>
+                      <th>Partner Integration</th>
+                      <th>Partner Ad Accounts</th>
+                      <th>Deep Linking Integration</th>
+                      <th>SDK Signature integration</th>
+                      <th>Data import</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+
+
+                      <td class="bg-gradient-warning text-warning"></td>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+
+                      <td class="bg-gradient-danger text-danger"></td>
+
+
+                    </tr>
+                </table>
+              </div>
+
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <!-- Bootstrap core JavaScript-->
+  <script src="/scripts/jquery.min.js"></script>
+  <script src="/scripts/bootstrap.bundle.min.js"></script>
+  </script>
+  <!-- Core plugin JavaScript-->
+  <script src="/scripts/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="/scripts/sb-admin-2.min.js"></script>
+
+  <!-- Page level plugins -->
+  <script src="/scripts/jquery.dataTables.min.js"></script>
+  <script src="/scripts/dataTables.bootstrap4.min.js"></script>
+
+  <!-- Page level custom scripts -->
+  <script src="/scripts/datatables-demo.js"></script>
+  <script src="/scripts/jira.js"></script>
+
+</body>
+
+</html>
